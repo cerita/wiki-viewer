@@ -1,0 +1,16 @@
+#container {
+  width: 100%;
+  min-height: 100vh; }
+  #container .btn {
+    color: #aaa;
+    background-color: transparent; }
+    #container .btn:hover {
+      color: pink; }
+  #container input {
+    border: none;
+    background: none; }
+    #container input:focus {
+      outline: none;
+      border-bottom: 1px solid #aaa; }
+
+/*# sourceMappingURL=style.css.map */

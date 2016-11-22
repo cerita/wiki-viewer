@@ -1,6 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
 #container {
   width: 100%;
-  min-height: 100vh; }
+  margin-bottom: 32px; }
   #container .btn {
     color: #aaa;
     background-color: transparent; }
@@ -12,5 +16,19 @@
     #container input:focus {
       outline: none;
       border-bottom: 1px solid #aaa; }
+
+#view-results {
+  margin-top: 32px; }
+
+#search-results li {
+  list-style: none; }
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef; }
 
 /*# sourceMappingURL=style.css.map */

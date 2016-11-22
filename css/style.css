@@ -2,18 +2,18 @@ html, body {
   margin: 0;
   padding: 0; }
 
-#container {
+.container {
   width: 100%;
   margin-bottom: 32px; }
-  #container .btn {
+  .container .btn {
     color: #aaa;
     background-color: transparent; }
-    #container .btn:hover {
+    .container .btn:hover {
       color: pink; }
-  #container input {
+  .container input {
     border: none;
     background: none; }
-    #container input:focus {
+    .container input:focus {
       outline: none;
       border-bottom: 1px solid #aaa; }
 

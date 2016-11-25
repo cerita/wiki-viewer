@@ -17,7 +17,7 @@ function getWikiData(userInput) {
     success: function(data) {
       $("#search-results").html('');
         for(var i=0; i < data[1].length; i++) {
-          $('#search-results').prepend("<li><a href=" + data[3][i]+ ">" + data[1][i] + "</a><p>" + data[2][i]+ "</p></li>");
+          $('#search-results').append("<li><a href=" + data[3][i]+ ">" + data[1][i] + "</a><p>" + data[2][i]+ "</p></li>");
         }
        // do something with data
        console.log(data[1][0]);
@@ -25,6 +25,7 @@ function getWikiData(userInput) {
       console.log(data[3][0]);
     },
     error: function(errorMsg) {
+      $('#search-results').prepend("Oops. Something went wrong.");
       console.log("Something went wrong.");
     }
 })

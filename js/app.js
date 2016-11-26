@@ -35,4 +35,5 @@ function getWikiData(userInput) {
 window.onload = function() {
 	button = document.getElementById("search-button");
 	button.addEventListener("click", getUserInput);
+    
 }

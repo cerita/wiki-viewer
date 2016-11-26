@@ -1,46 +1,90 @@
-$accent:pink;
-html, body {
-  margin:0;
-  padding:0;
+$primary: #F9545B; 
+$accent-text:#FF9690;
+
+$aqua: #9AE1D3;
+$lite-pink: #F9D4DB;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    background-color: #0E4675;
+    color: #F9D4DB;
 }
+
 .container {
-  width:100%;
-  margin-bottom:32px;
-
-  .btn {
-    color:#aaa;
-    background-color:rgba(0,0,0,0);
-    &:hover{
-      color:$accent;
+    width: 100%;
+    margin: 1em 1em 1em 1em;
+    h1 {
+        font-size: 2em;
+        color: #F9545B;
     }
-  }
-
-  input {
-    border: none;
-	  background: none;
-    &:focus{
-      outline:none;
-      border-bottom: 1px solid #aaa;
+    .btn {
+        color: #aaa;
+        background-color: rgba(0, 0, 0, 0);
+        color: $aqua;
+        &:hover {
+            color: $accent-text;
+        }
     }
-  }
+    input {
+        border: none;
+        background: none;
+        color: $accent-text;
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid #aaa;
+        }
+         &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #9AE1D3;
+        }
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #9AE1D3;
+        }
+        &:-ms-input-placeholder {
+            /* IE 10+ */
+            color: #9AE1D3;
+        }
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            color: #9AE1D3;
+        }
+    }
 }
 
 #view-results {
-  margin-top:32px;
+    margin-top: 32px;
 }
 
 #search-results {
-  li {
-    list-style:none;
-
-  }
+    li {
+        list-style: none;
+        a {
+            font-size: 1.3em;
+            color: $aqua;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1em;
+        }
+    }
 }
 
 footer {
-   position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #0E4675;
+    border-top: 1px solid $primary;
+    a {
+        color: $aqua;
+        &:hover {
+            color: $aqua;
+        }
+    }
 }
